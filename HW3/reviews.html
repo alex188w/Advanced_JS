@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="reviews.js" defer></script>
+    <style>
+      .view__list {
+        width: 80%;
+        padding: 2%;
+      }
+      .view__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid #007bff;
+      }
+      .view__product-name {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 95px; 
+        margin-bottom: 20px;
+        line-height: normal;
+      }
+      .view__product-review {
+        margin: 0;
+        line-height: normal;
+      }
+
+      .view__btn-delete-review:hover {
+        background-color: darkred;
+        color: whitesmoke;
+      }
+      .view__product-review-list {
+        margin-top: 5px;
+        margin-left: 35px;
+      }
+      .view__product-review-item {
+        position: relative;
+        margin-bottom: 5px;
+        list-style-type: decimal;
+      }
+      .view__btn-delete-review {
+        position: absolute;
+        /* top: 2px; */
+        left: -65px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        font-weight: 700;
+        font-size: 7px;
+      }
+      .hidden {
+        display: none;
+      }
+      .view__btn-show-hide {
+        width: 155px;
+        align-self: center;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        line-height: normal;
+        transition-duration: 0.3s;
+        transition-property: background-color, color;
+        transition-timing-function: ease-in-out;
+        background-color: #007bff;
+      }
+      .view__btn-show-hide:hover {
+        background-color: rgb(0, 126, 98);
+        color: whitesmoke;
+      }
+
+      .view__btn-show-hide.close {
+        background-color: rgb(160, 177, 3);
+      }
+      .product {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+    
+      button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Страница просмотра отзывов</h1>
+    <div id="content" class="product-reviewsAll">
+      <button id="product-index">Перейти на страницу составления отзыва</button>
+    </div>
+  </body>
+</html>

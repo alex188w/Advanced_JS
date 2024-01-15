@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <style>
+      .product {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .placeholder {
+        font-size: 36px;
+      }
+
+      input,
+      textarea,
+      button {
+        padding: 10px;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        font-family: arial;
+        font-size: 16px;
+      }
+
+      .product-review {
+        height: 100px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Страница добавления отзыва</h1>
+    <div class="product">
+      <input
+        id="product-name"
+        type="text"
+        class="product-name"
+        placeholder="Введите название продукта"
+      />
+      <textarea class="product-review" id="product-review" name="reviewText" placeholder="Введите отзыв"></textarea>
+      <!-- <input
+        id="product-review"
+        type="text"
+        class="product-review"
+        placeholder="Введите отзыв о продукте"
+      /> -->
+      <div class="information"></div>
+      <button id="save-btn">Сохранить отзыв</button>
+      <button id="product-reviewsAll">Просмотреть отзывы о продуктах</button>
+    </div>
+  </body>
+</html>
